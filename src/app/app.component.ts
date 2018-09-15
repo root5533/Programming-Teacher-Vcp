@@ -58,7 +58,7 @@ export class AppComponent {
     // });
     const newVcp = {
       'question': vcp.question,
-      'vcp': value
+      'vcp': parseFloat(value)
     };
     this.items.update(vcp.$key, newVcp).then(() => {
       console.log('updated');
